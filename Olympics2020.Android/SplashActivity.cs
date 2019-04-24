@@ -34,13 +34,12 @@ namespace com.xamarin.sample.splashscreen
         async void SimulateStartup ()
         {
             Log.Debug(TAG, "Performing some startup work that takes a bit of time.");
-            await Task.Delay(100); // Simulate a bit of startup work.
+            await Task.Delay(400); // Simulate a bit of startup work.
             Log.Debug(TAG, "Startup work is finished - starting MainActivity.");
 
-            Bundle animationBundle = ActivityOptions.MakeCustomAnimation(this, Resource.Animation.abc_fade_in, Resource.Animation.abc_fade_in).ToBundle();
-            StartActivity(new Intent(Application.Context, typeof (MainActivity)), animationBundle
-                );
-
+            Bundle animationBundle = ActivityOptions.MakeCustomAnimation(this, Android.Resource.Animation.FadeIn, Android.Resource.Animation.FadeOut).ToBundle();
+            StartActivity(new Intent(Application.Context, typeof (MainActivity)), animationBundle);
+           // OverridePendingTransition(Android.Resource.Animation.FadeIn, Android.Resource.Animation.FadeIn);
         }
     }
 }
