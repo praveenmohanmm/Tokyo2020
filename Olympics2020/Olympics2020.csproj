@@ -13,5 +13,16 @@
   <ItemGroup>
     <PackageReference Include="Xamarin.Forms" Version="3.6.0.264807" />
     <PackageReference Include="Xamarin.Essentials" Version="1.0.1" />
+    <PackageReference Include="Newtonsoft.Json" Version="12.0.2" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Remove="data.json" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="data.json" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Views\" />
+    <Folder Include="models\" />
   </ItemGroup>
 </Project>

@@ -1,19 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<ContentPage  BackgroundColor="White" xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="Olympics2020.HomePage">
+<ContentPage BackgroundColor="White" xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="Olympics2020.HomePage">
     <ContentPage.Resources>
         <ResourceDictionary>
-            <Style x:Key="LabelStyle" TargetType="Label">
-                <Setter Property="HorizontalOptions" Value="Center" />
-                <Setter Property="VerticalOptions" Value="Center" />
-                <Setter Property="VerticalTextAlignment" Value="Center" />
-                <Setter Property="TextColor" Value="#042363" />
-                <Setter Property="FontSize" Value="17" />
-            </Style>
+           
         </ResourceDictionary>
     </ContentPage.Resources>
     <ContentPage.Content>
         <Grid HorizontalOptions="FillAndExpand" VerticalOptions="Center">
             <Grid.RowDefinitions>
+                <RowDefinition Height="Auto">
+                </RowDefinition>
                 <RowDefinition Height="Auto">
                 </RowDefinition>
                 <RowDefinition Height="Auto">
@@ -35,10 +31,13 @@
                     </Label.FormattedText>
                 </Label>
                 <StackLayout.GestureRecognizers>
-                    <TapGestureRecognizer Tapped="OnScheduleClicked"></TapGestureRecognizer>
+                    <TapGestureRecognizer Tapped="OnScheduleClicked">
+                    </TapGestureRecognizer>
                 </StackLayout.GestureRecognizers>
-                    
             </StackLayout>
+            <DatePicker Grid.Row="3" IsVisible="false" x:Name="ScheduleDatePicker" HorizontalOptions="Center" VerticalOptions="Center" HeightRequest="50" WidthRequest="150" TextColor="#042363"
+                        DateSelected="OnDateSelected">
+            </DatePicker>
         </Grid>
     </ContentPage.Content>
 </ContentPage>

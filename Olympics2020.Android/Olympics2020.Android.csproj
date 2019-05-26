@@ -97,6 +97,7 @@
     <AndroidResource Include="Resources\drawable\ologo.gif" />
     <AndroidResource Include="Resources\drawable\tokyocolor.png" />
     <AndroidResource Include="Resources\drawable\tokyo.png" />
+    <AndroidResource Include="Resources\drawable\back.png" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Resources\drawable\" />

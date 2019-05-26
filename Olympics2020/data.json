@@ -1,0 +1,116 @@
+{
+   "AllDateFixtures":[
+      {
+         "TodaysGames":[
+            {
+               "ItemName":"Archery",
+               "ItemDesc":"Arhery data",
+               "ItemSchedule":"24-07-2020",
+               "ItemTimeJST":"9:00 - 11:00",
+               "ItemVenue":"Yumenoshima Park Archery Field",
+               "ItemGenderType":"W"
+            },
+            {
+               "ItemName":"Archery",
+               "ItemDesc":"Arhery data",
+               "ItemSchedule":"24-07-2020",
+               "ItemTimeJST":"13:00 - 15:00",
+               "ItemVenue":"Yumenoshima Park Archery Field",
+               "ItemGenderType":"M"
+            },
+            {
+               "ItemName":"Rowing",
+               "ItemDesc":"Rowing data",
+               "ItemSchedule":"24-07-2020",
+               "ItemTimeJST":"8:30 - 12:10",
+               "ItemVenue":"Sea Forest Waterway",
+               "ItemGenderType":"B"
+            }
+         ]
+      },
+      {
+         "TodaysGames":[
+            {
+               "ItemName":"Swimming",
+               "ItemDesc":" Swimming data",
+               "ItemSchedule":"25-07-2020",
+               "ItemTimeJST":"19:00 - 21:30",
+               "ItemVenue":"Tokyo Aquatics Centre",
+               "ItemGenderType":"B"
+            },
+            {
+               "ItemName":"Water Polo",
+               "ItemDesc":"Water Polo data",
+               "ItemSchedule":"25-07-2020",
+               "ItemTimeJST":"14:00 - 16:40",
+               "ItemVenue":"Tatsumi Water Polo Centre",
+               "ItemGenderType":"W"
+            },
+            {
+               "ItemName":"Archery Gold medal event",
+               "ItemDesc":"Arhery data",
+               "ItemSchedule":"25-07-2020",
+               "ItemTimeJST":"9:30 - 12:05",
+               "ItemVenue":"Yumenoshima Park Archery Field",
+               "ItemGenderType":"B"
+            },
+            {
+               "ItemName":"Badminton",
+               "ItemDesc":"Badminton data",
+               "ItemSchedule":"25-07-2020",
+               "ItemTimeJST":"9:00 - 14:30",
+               "ItemVenue":"Musashino Forest Sport Plaza",
+               "ItemGenderType":"B"
+            },
+            {
+               "ItemName":"softball",
+               "ItemDesc":"softball data",
+               "ItemSchedule":"25-07-2020",
+               "ItemTimeJST":"10:00 - 16:30",
+               "ItemVenue":"Yokohama Baseball Stadium",
+               "ItemGenderType":"W"
+            },
+            {
+               "ItemName":"softball",
+               "ItemDesc":"softball data",
+               "ItemSchedule":"25-07-2020",
+               "ItemTimeJST":"20:00 - 22:00",
+               "ItemVenue":"Yokohama Baseball Stadium",
+               "ItemGenderType":"W"
+            },
+            {
+               "ItemName":"3x3 Basketball",
+               "ItemDesc":"3x3 Basketball data",
+               "ItemSchedule":"25-07-2020",
+               "ItemTimeJST":"10:15 - 12:25",
+               "ItemVenue":"Aomi Urban Sports Park",
+               "ItemGenderType":"B"
+            },
+            {
+               "ItemName":"3x3 Basketball",
+               "ItemDesc":"3x3 Basketball data",
+               "ItemSchedule":"25-07-2020",
+               "ItemTimeJST":"14:00 - 15:50",
+               "ItemVenue":"Aomi Urban Sports Park",
+               "ItemGenderType":"B"
+            },
+            {
+               "ItemName":"3x3 Basketball",
+               "ItemDesc":"3x3 Basketball data",
+               "ItemSchedule":"25-07-2020",
+               "ItemTimeJST":"17:30 - 19:30",
+               "ItemVenue":"Aomi Urban Sports Park",
+               "ItemGenderType":"B"
+            },
+            {
+               "ItemName":"3x3 Basketball",
+               "ItemDesc":"3x3 Basketball data",
+               "ItemSchedule":"25-07-2020",
+               "ItemTimeJST":"21:00 - 22:50",
+               "ItemVenue":"Aomi Urban Sports Park",
+               "ItemGenderType":"B"
+            }
+         ]
+      }
+   ]
+}

@@ -34,7 +34,14 @@ namespace Olympics2020
 
         void OnScheduleClicked(object sender, System.EventArgs e)
         {
-            Device.OpenUri(new Uri("https://tokyo2020.org/en/games/schedule/olympic/"));
+            //Device.OpenUri(new Uri("https://tokyo2020.org/en/games/schedule/olympic/"));
+           // ScheduleDatePicker.IsVisible = true;
+            ScheduleDatePicker.Focus();
+        }
+
+        void OnDateSelected(object sender, Xamarin.Forms.DateChangedEventArgs e)
+        {
+            Navigation.PushAsync(new SchedulePage( e.NewDate));
         }
     }
 }
