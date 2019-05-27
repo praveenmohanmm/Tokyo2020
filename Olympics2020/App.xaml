@@ -8,5 +8,13 @@
                 <Setter Property="TextColor" Value="#042363" />
                 <Setter Property="FontSize" Value="17" />
             </Style>
+         <Style x:Key="LabelStyleSmall" TargetType="Label">
+                <Setter Property="HorizontalOptions" Value="Center" />
+                <Setter Property="VerticalOptions" Value="Center" />
+                <Setter Property="VerticalTextAlignment" Value="Center" />
+                <Setter Property="TextColor" Value="#042363" />
+                <Setter Property="FontSize" Value="15" />
+            </Style>
+        
     </Application.Resources>
 </Application>
