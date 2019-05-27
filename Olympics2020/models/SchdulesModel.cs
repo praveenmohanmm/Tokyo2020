@@ -7,7 +7,6 @@ namespace Olympics2020.models
     {
         public string ItemName { get; set; }
         public string ItemDesc { get; set; }
-        public string ItemSchedule { get; set; }
         public string ItemTimeJST { get; set; }
         public string ItemVenue { get; set; }
         public string ItemGenderType { get; set; }
@@ -15,6 +14,7 @@ namespace Olympics2020.models
 
     public class DayFixture
     {
+        public string ItemSchedule { get; set; }
         public List<GamesObject> TodaysGames { get; set; }
     }
 

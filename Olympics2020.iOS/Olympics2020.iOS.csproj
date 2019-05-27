@@ -137,5 +137,8 @@
   <ItemGroup>
     <BundleResource Include="Resources\appicon.png" />
     <BundleResource Include="Resources\logo.png" />
+    <BundleResource Include="Resources\calender.png" />
+    <BundleResource Include="Resources\swimming.png" />
+    <BundleResource Include="Resources\back.png" />
   </ItemGroup>
 </Project>

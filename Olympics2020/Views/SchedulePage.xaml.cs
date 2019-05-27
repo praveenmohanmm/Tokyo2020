@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.IO;
+using System.Linq;
 using System.Reflection;
 using Newtonsoft.Json;
 using Olympics2020.models;
@@ -15,7 +16,8 @@ namespace Olympics2020
         {
             InitializeComponent();
             NavigationPage.SetHasNavigationBar(this, false);
-            SchduleLabel.Text = "Schedule For " + date.ToString("dd-MM-yyyy");
+            string selectedDate = date.ToString("dd-MM-yyyy");
+            SchduleLabel.Text = "Schedule For " + selectedDate;
             var assembly = IntrospectionExtensions.GetTypeInfo(typeof(SchedulePage)).Assembly;
             var stringds = assembly.GetManifestResourceNames();
             Stream stream = assembly.GetManifestResourceStream("Olympics2020.data.json");
@@ -29,7 +31,7 @@ namespace Olympics2020
                 {
                     AllDateFixtures = new List<DayFixture>();
                     AllDateFixtures = data.AllDateFixtures;
-                    ScheduleListView.ItemsSource = data.AllDateFixtures[1].TodaysGames;
+                    ScheduleListView.ItemsSource = GetSchedule(selectedDate);
                 }
             }
 
@@ -43,13 +45,24 @@ namespace Olympics2020
         void OnCalender(object sender, System.EventArgs e)
         {
             picker.IsVisible = false;
-            picker.MinimumDate = new DateTime(2020, 07, 22);
+            picker.MinimumDate = new DateTime(2020, 07, 23);
             picker.MaximumDate = new DateTime(2020, 08, 09);
             picker.Focus();
             picker.DateSelected += (snder, ev) => 
             {
-                ScheduleListView.ItemsSource = AllDateFixtures[1]?.TodaysGames;
+                string selectedDate = ev.NewDate.ToString("dd-MM-yyyy");
+                SchduleLabel.Text = "Schedule For " + selectedDate;
+                ScheduleListView.ItemsSource = GetSchedule(selectedDate);
             };
         }
+
+
+        List<GamesObject> GetSchedule( string date )
+        {
+            var todaysSchedule = AllDateFixtures.FirstOrDefault(itm => itm.ItemSchedule == date);
+            return todaysSchedule?.TodaysGames;
+        }
+
+
     }
 }

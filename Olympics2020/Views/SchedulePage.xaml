@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" BackgroundColor="White" x:Class="Olympics2020.SchedulePage">
     <ContentPage.Content>
-        <Grid Padding="20, 40, 20,20" RowSpacing="0">
+        <Grid Padding="20, 60, 20,20" RowSpacing="0">
             <Grid.RowDefinitions>
                 <RowDefinition Height="80">
                 </RowDefinition>
@@ -25,11 +25,12 @@
                 </Image>
                 <DatePicker x:Name="picker" IsVisible="false"></DatePicker>
             </StackLayout>
-            <ListView Grid.Row="1" x:Name="ScheduleListView">
+
+            <ListView Grid.Row="1" x:Name="ScheduleListView" BackgroundColor="Transparent" >
                 <ListView.ItemTemplate>
                     <DataTemplate>
                         <ViewCell>
-                            <Grid>
+                            <Grid BackgroundColor="Transparent">
                                 <Grid.ColumnDefinitions>
                                     <ColumnDefinition Width="1*">
                                     </ColumnDefinition>
