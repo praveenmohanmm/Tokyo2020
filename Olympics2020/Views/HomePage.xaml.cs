@@ -14,7 +14,7 @@ namespace Olympics2020
             CreateDaysStackContent();
             ScheduleDatePicker.MinimumDate = new DateTime(2020, 07, 22);
             ScheduleDatePicker.MaximumDate = new DateTime(2020, 08, 09);
-            ScheduleDatePicker.Date = new  DateTime(2020, 07, 22);
+            //ScheduleDatePicker.Date = new  DateTime(2020, 07, 22);
         }
 
         void CreateDaysStackContent()
@@ -44,6 +44,7 @@ namespace Olympics2020
 
         void OnDateSelected(object sender, Xamarin.Forms.DateChangedEventArgs e)
         {
+            if(ScheduleDatePicker.IsFocused)
             Navigation.PushAsync(new SchedulePage( e.NewDate));
         }
     }
