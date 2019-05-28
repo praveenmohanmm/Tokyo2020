@@ -14,6 +14,7 @@ namespace Olympics2020
             CreateDaysStackContent();
             ScheduleDatePicker.MinimumDate = new DateTime(2020, 07, 22);
             ScheduleDatePicker.MaximumDate = new DateTime(2020, 08, 09);
+            ScheduleDatePicker.Date = new  DateTime(2020, 07, 22);
         }
 
         void CreateDaysStackContent()

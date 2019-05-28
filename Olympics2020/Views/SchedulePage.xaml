@@ -8,7 +8,7 @@
                 <RowDefinition Height="*">
                 </RowDefinition>
             </Grid.RowDefinitions>
-            <StackLayout Grid.Row="0" Spacing="50" Orientation="Horizontal" HorizontalOptions="StartAndExpand" VerticalOptions="Start">
+            <StackLayout Grid.Row="0" Spacing="50" Orientation="Horizontal" HorizontalOptions="FillAndExpand" VerticalOptions="Start">
                 <Image HeightRequest="25" WidthRequest="25" Source="back.png" Aspect="Fill" HorizontalOptions="Start" VerticalOptions="Center">
                 </Image>
                 <Label x:Name="SchduleLabel" Style="{StaticResource LabelStyleSmall}" FontSize="18">
@@ -41,7 +41,7 @@
                                 </Grid.ColumnDefinitions>
                                 <Image Grid.Column="0" Source="swimming.png" HeightRequest="35" WidthRequest="35" Aspect="AspectFill" HorizontalOptions="Center" VerticalOptions="Center">
                                 </Image>
-                                <Label Grid.Column="1" Text="{Binding ItemName}" Style="{StaticResource LabelStyleSmall}">
+                                <Label Grid.Column="1" Text="{Binding ItemName}" Style="{StaticResource LabelStyleSmall}" HorizontalTextAlignment="Start" HorizontalOptions="Start">
                                 </Label>
                                 <Label Grid.Column="2" Text="{Binding ItemTimeJST}" Style="{StaticResource LabelStyleSmall}">
                                 </Label>
